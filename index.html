@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="position">
+      <div class="wrapper box">
+        <div class="box__top top">
+          <p class="top__desc desc-one">
+            Обычная цена: 1449p.
+          </p>
+          <p class="top__desc desc-two">
+            Цена по акции: 149р.
+          </p>
+          <p class="top__desc desc-three">
+            Остаток товара на 11.11.2050
+          </p>
+          <p class="top__desc desc-four">
+            <span>58</span>
+          </p>
+        </div>
+        <div class="box__average average">
+          <img class="average__img" src="img/pan.webp" alt="Изображение">
+        </div>
+        <div class="box__bottom">
+          <form class="box__form" method="post" action="https://jsonplaceholder.typicode.com/posts" id="myForm">
+            <h3 class="bottom__title">
+              Ввидите ваши данные в форму ниже:
+            </h3>
+            <label class="bottom__label label-name">
+              <input class="bottom__input" type="text" name="name" placeholder="Ваше имя" id="inputName">
+            </label>
+            <label class="bottom__label">
+              <input class="bottom__input" type="tel" name="tel" placeholder="Ваш телефон" id="inputPhone">
+            </label>
+            <input type="hidden" name="sub1" value="123">
+            <input type="hidden" name="utm_source" value="321">
+            <input type="hidden" name="ip" value="192.168.1.1">
+            <button class="bottom__btn btn-reset" id="btn">
+              ПОЛУЧИТЬ ЗА 149 руб.
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
